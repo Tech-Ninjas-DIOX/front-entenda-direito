@@ -78,8 +78,8 @@ const SignUp: React.FC = () => {
 
       <Content>
         <AnimationContainer>
-          <img src={logoImg} alt="GoBarber" />
-          <h1>ADVOCATE.ME</h1>
+          <img src={logoImg} alt="Entenda Direito" />
+          <h1>ENTENDA DIREITO</h1>
 
           <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Faça seu Cadastro</h1>
