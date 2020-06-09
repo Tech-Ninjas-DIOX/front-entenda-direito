@@ -80,7 +80,7 @@ const ForgotPassword: React.FC = () => {
       <Content>
         <AnimationContainer>
           <img src={logoImg} alt="GoBarber" />
-          <h1>ADVOCATE.ME</h1>
+          <h1>ENTENDA DIREITO</h1>
 
           <Form ref={formRef} onSubmit={handleSubmit}>
             <h1>Recuperar senha</h1>
