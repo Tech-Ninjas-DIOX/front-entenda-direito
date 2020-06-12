@@ -79,7 +79,7 @@ const ForgotPassword: React.FC = () => {
 
       <Content>
         <AnimationContainer>
-          <img src={logoImg} alt="GoBarber" />
+          <img src={logoImg} alt="Entenda Direito" />
           <h1>ENTENDA DIREITO</h1>
 
           <Form ref={formRef} onSubmit={handleSubmit}>

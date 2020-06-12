@@ -25,3 +25,6 @@ yarn-error.log*
 # tmp
 tmp/*
 !tmp/.gitkeep
+
+# package-lock.json
+package-lock.json
