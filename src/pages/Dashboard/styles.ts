@@ -215,56 +215,5 @@ export const Appointment = styled.div`
 `;
 
 export const Calendar = styled.aside`
-  width: 380px;
-
-  .DayPicker {
-    background: ${shade(0.2, '#0d0c3b')};
-    border-radius: 10px;
-  }
-
-  .DayPicker-wrapper {
-    padding-bottom: 0;
-  }
-
-  .DayPicker,
-  .DayPicker-Month {
-    width: 100%;
-  }
-
-  .DayPicker-Month {
-    border-collapse: separate;
-    border-spacing: 8px;
-    margin: 16px;
-  }
-
-  .DayPicker-Day {
-    width: 40px;
-    height: 40px;
-  }
-
-  .DayPicker-Day--available:not(.DayPicker-Day--outside) {
-    background: #0d0c3f;
-    border-radius: 10px;
-    color: #fff;
-  }
-
-  .DayPicker:not(.DayPicker--interactionDisabled)
-    .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
-    background: ${shade(0.2, '#0d0c3f')};
-  }
-
-  .DayPicker-Day--today {
-    font-weight: normal;
-  }
-
-  .DayPicker-Day--disabled {
-    color: #666360 !important;
-    background: transparent !important;
-  }
-
-  .DayPicker-Day--selected {
-    background: #ffbd4a !important;
-    border-radius: 10px;
-    color: #232129 !important;
-  }
+  width: 500px;
 `;

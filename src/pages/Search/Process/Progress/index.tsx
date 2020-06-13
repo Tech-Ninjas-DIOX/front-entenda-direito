@@ -10,7 +10,7 @@ interface Props {
 }
 
 const Progress: React.FC = () => {
-  const { getView, setView } = useToast();
+  const { getProcess, setProcess } = useToast();
 
   const lista: Props[] = [
     {
@@ -28,10 +28,10 @@ const Progress: React.FC = () => {
 
   return (
     <>
-      {getView && (
+      {getProcess && (
         <ModalContainer>
           <Modal>
-            <Dismiss onClick={setView}>x</Dismiss>
+            <Dismiss onClick={setProcess}>x</Dismiss>
             {lista.map((item, index) => (
               <li key={String(index)}>
                 <div>
