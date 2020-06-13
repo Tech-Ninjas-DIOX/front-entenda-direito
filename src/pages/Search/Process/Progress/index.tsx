@@ -9,7 +9,7 @@ interface Props {
   descricao: string;
 }
 
-const Andamento: React.FC = () => {
+const Progress: React.FC = () => {
   const { getView, setView } = useToast();
 
   const lista: Props[] = [
@@ -57,4 +57,4 @@ const Andamento: React.FC = () => {
   );
 };
 
-export default Andamento;
+export default Progress;

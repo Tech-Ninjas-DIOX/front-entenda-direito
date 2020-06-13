@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Andamento from './Andamento';
+import Progress from './Progress';
 import Button from '../../../components/Button';
 
 const Process: React.FC = () => {
@@ -18,7 +18,7 @@ const Process: React.FC = () => {
         Mostrar andamento
       </Button>
 
-      <ul>{mostrar && <Andamento />}</ul>
+      <ul>{mostrar && <Progress />}</ul>
     </>
   );
 };
