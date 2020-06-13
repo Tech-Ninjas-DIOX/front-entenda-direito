@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { FiPower } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
@@ -18,9 +18,25 @@ import {
 
 import logoImg from '../../assets/logo.svg';
 import { useAuth } from '../../hooks/auth';
+import { useModal } from '../../hooks/toastModal';
+import { useToast } from '../../hooks/toast';
 
 const Dashboard: React.FC = () => {
   const { signOut, user } = useAuth();
+  const { addModal } = useModal();
+  const { addToast } = useToast();
+
+  const definition = useCallback(() => {
+    addToast({
+      title: 'Definição',
+      description: 'Bananas de Pijamas são ruins',
+    });
+
+    addModal({
+      title: 'Definição',
+      description: 'Bananas de Pijamas são ruins',
+    });
+  }, [addToast, addModal]);
 
   return (
     <Container>
@@ -46,6 +62,15 @@ const Dashboard: React.FC = () => {
       </Header>
 
       <Content>
+        <span>
+          A confissão qualificada não tem o condão de reduzir a pena
+          intermediária, pois, conquanto o agente assuma o fato, vincula este a{' '}
+          <span onMouseOver={definition} onFocus={definition}>
+            circunstância
+          </span>{' '}
+          justificante ou excludente
+        </span>
+
         <Schedule>
           <Section>
             <Search />
