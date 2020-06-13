@@ -2,7 +2,16 @@ import React from 'react';
 import { FiPower } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
-import { Container, Header, HeaderContent, Profile, Content } from './styles';
+import Search from '../Search';
+
+import {
+  Container,
+  Header,
+  HeaderContent,
+  Profile,
+  Content,
+  Section,
+} from './styles';
 
 import logoImg from '../../assets/logo.svg';
 import { useAuth } from '../../hooks/auth';
@@ -34,7 +43,9 @@ const Dashboard: React.FC = () => {
       </Header>
 
       <Content>
-        <h1>Dashboard</h1>
+        <Section>
+          <Search />
+        </Section>
       </Content>
     </Container>
   );

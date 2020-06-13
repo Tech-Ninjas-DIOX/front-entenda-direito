@@ -10,15 +10,22 @@ export interface ToastMessage {
   description?: string;
 }
 
+export interface Mostrar {
+  mostrar: boolean;
+}
+
 interface ToastContextData {
   addToast(message: Omit<ToastMessage, 'id'>): void;
   removeToast(id: string): void;
+  getView(): boolean;
+  setView(): void;
 }
 
 const ToastContext = createContext<ToastContextData>({} as ToastContextData);
 
 export const ToastProvider: React.FC = ({ children }) => {
   const [messages, setMessages] = useState<ToastMessage[]>([]);
+  const [mostrar, setMostrar] = useState(false);
 
   const addToast = useCallback(
     ({ type, title, description }: Omit<ToastMessage, 'id'>) => {
@@ -40,8 +47,16 @@ export const ToastProvider: React.FC = ({ children }) => {
     setMessages((state) => state.filter((message) => message.id !== id));
   }, []);
 
+  const getView = useCallback(() => {
+    return mostrar;
+  }, [mostrar]);
+
+  const setView = useCallback(() => {
+    setMostrar(!mostrar);
+  }, [mostrar]);
+
   return (
-    <ToastContext.Provider value={{ addToast, removeToast }}>
+    <ToastContext.Provider value={{ addToast, removeToast, getView, setView }}>
       {children}
       <ToastContainer messages={messages} />
     </ToastContext.Provider>
