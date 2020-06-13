@@ -24,7 +24,7 @@ export const HeaderContent = styled.div`
     border: 0;
 
     svg {
-      color: #999591;
+      color: #ffbd4a;
       width: 20px;
       height: 20px;
     }
@@ -49,7 +49,7 @@ export const Profile = styled.div`
     line-height: 24px;
 
     span {
-      color: #f4ede8;
+      color: #999591;
     }
 
     a {
@@ -65,7 +65,7 @@ export const Profile = styled.div`
 
 export const Content = styled.main`
   max-width: 1120px;
-  margin: 64px auto;
+  margin: 0 auto;
   display: flex;
 `;
 
@@ -156,7 +156,7 @@ export const Section = styled.div`
   margin-top: 48px;
 
   > strong {
-    color: #999591;
+    color: #9dbbae;
     font-size: 20px;
     line-height: 26px;
     border-bottom: 1px solid #3e3b47;
@@ -166,7 +166,7 @@ export const Section = styled.div`
   }
 
   > p {
-    color: #999591;
+    color: #9dbbae;
   }
 `;
 
