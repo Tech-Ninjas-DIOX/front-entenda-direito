@@ -3,6 +3,7 @@ import { FiPower } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import Search from '../Search';
+import Dictionary from '../Dictionary';
 
 import {
   Container,
@@ -11,6 +12,8 @@ import {
   Profile,
   Content,
   Section,
+  Calendar,
+  Schedule,
 } from './styles';
 
 import logoImg from '../../assets/logo.svg';
@@ -43,9 +46,17 @@ const Dashboard: React.FC = () => {
       </Header>
 
       <Content>
-        <Section>
-          <Search />
-        </Section>
+        <Schedule>
+          <Section>
+            <Search />
+          </Section>
+        </Schedule>
+
+        <Calendar>
+          <Section>
+            <Dictionary />
+          </Section>
+        </Calendar>
       </Content>
     </Container>
   );
