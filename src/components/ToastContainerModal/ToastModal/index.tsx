@@ -24,16 +24,6 @@ const icons = {
 const ToastModal: React.FC<ToastModalProps> = ({ message, style }) => {
   const { removeModal } = useModal();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      removeModal(message.id);
-    }, 3000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [message.id, removeModal]);
-
   return (
     <Container
       type={message.type}

@@ -34,7 +34,7 @@ const teste = {
     avatar: '94e0c12a57d1c7b37a0e-profile.jpeg',
     created_at: '2020-04-25T04:33:07.635Z',
     updated_at: '2020-05-25T04:55:48.726Z',
-    avatar_url: '🤔️',
+    avatar_url: 'https://api.adorable.io/avatars/100/abott@adorable.png',
   },
   token:
     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNTgyMTA4Nzg1LCJleHAiOjE1ODI3MTM1ODV9.RQwulX6kUOXTNSM30RCepbHwQjZPVw6BcMQKYOvza3Q',

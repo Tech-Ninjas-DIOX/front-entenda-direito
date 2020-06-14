@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useCallback} from 'react';
 
 import { ModalContainer, Modal, Dismiss } from './styles';
 import { useToast } from '../../../../hooks/toast';
-
+import { useModal } from '../../../../hooks/toastModal';
 interface Props {
   publicacao: string;
   audiencia: string;
@@ -11,6 +11,14 @@ interface Props {
 
 const Progress: React.FC = () => {
   const { getProcess, setProcess } = useToast();
+  const { addModal } = useModal();
+
+  const definition = useCallback(() => {
+    addModal({
+      title: 'Definição',
+      description: 'Bananas de Pijamas são ruins',
+    });
+  }, [addModal]);
 
   const lista: Props[] = [
     {
@@ -50,6 +58,29 @@ const Progress: React.FC = () => {
                 <span>{item.descricao}</span>
               </li>
             ))}
+            <li>
+                <div>
+                  <div>
+                    <strong>Data da Publicação:</strong>
+                    <span>12/06/2020</span>
+                  </div>
+                  <div>
+                    <strong>Data da Audiência:</strong>
+                    <span>22/06/2020</span>
+                  </div>
+                </div>
+                <p>
+                  <strong>Descrição:</strong>
+                </p>
+                <span>
+                  A confissão qualificada não tem o condão de reduzir a pena
+                  intermediária, pois, conquanto o agente assuma o fato, vincula este a{' '}
+                  <span className="golden" onClick={definition} onFocus={definition}>
+                    circunstância justificante ou excludente
+                  </span>
+                </span>
+              </li>
+         
           </Modal>
         </ModalContainer>
       )}

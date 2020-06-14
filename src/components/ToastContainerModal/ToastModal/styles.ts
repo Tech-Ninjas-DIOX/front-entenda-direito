@@ -22,14 +22,19 @@ const toastTypeVariations = {
 };
 
 export const Container = styled(animated.div)<ContainerProps>`
-  width: 360px;
-
-  position: relative;
+  width: 500px;
+  
+  position: fixed;
+  top: 35%;
+  left: 30%;
   padding: 16px 30px 16px 16px;
   border-radius: 10px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 200000;
 
   display: flex;
+  justify-content: center;
+  align-itens: center;
 
   & + div {
     margin-top: 8px;

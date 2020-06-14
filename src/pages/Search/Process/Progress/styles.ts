@@ -50,6 +50,11 @@ export const Modal = styled.div`
     span {
       margin-top: 8px;
     }
+
+    .golden{
+      color: #ffbd4a;
+      cursor: pointer;
+    }
   }
 
   animation: modal 0.3s;
