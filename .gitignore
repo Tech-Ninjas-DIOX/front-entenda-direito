@@ -25,6 +25,7 @@ yarn-error.log*
 # tmp
 tmp/*
 !tmp/.gitkeep
+!tmp/spoiler.gif
 
 # package-lock.json
 package-lock.json
