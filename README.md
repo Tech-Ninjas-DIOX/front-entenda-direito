@@ -1,9 +1,9 @@
 <h1 align="center">
-Entenda Direito ⚖
+  Entenda Direito ⚖
 </h1>
 
 <p align="center">
-  <img src="" width="1200">
+  <img src="./tmp/spoiler.gif" >
 </p>
 
 ---
@@ -22,28 +22,29 @@ Entenda Direito ⚖
 ---
 
 <h3 align="center">
-  <a href="#information_source-sobre">Sobre</a> |
+  <a href="#information_source-sobre-o-projeto">Sobre</a> |
   <a href="#interrobang-motivo">Motivo</a> |
   <a href="#rocket-tecnologias-utilizadas">Tecnologias</a> |
-  <a href="#package-package-como-baixar-o-projeto">Como baixar o projeto</a> |
-  <a href="#link-como-contribuir">Como Contribuir</a> |
+  <a href="#package-como-baixar-o-projeto">Como baixar o projeto</a> |
 </h3>
 <h3 align="center">
-  <a href="#recycle-como-atualizar-seu-fork-com-as-mudanças-do-original">Como atualizar seu fork com as mudanças do original</a> |
-  <a href="#memo-licença">Licença</a>
+  <a href="#link-como-contribuir">Como Contribuir</a> |
+  <a href="#recycle-como-atualizar-seu-fork-com-as-mudanças-do-original">Como atualizar seu fork</a> |
+  <a href="#memo-licença">Licença</a> |
+  <a href="#busts_in_silhouette-contribuidores">Contribuidores</a>
 </h3>
 
 ---
 
 ## :information_source: Sobre o Projeto
 
-O **Entenda Direito ⚖** é uma aplicação que visa facilitar a interação entre clientes e advogados, sobretudo no que diga respeito ao entendimento de situações e termos jurídicos.
+O **Entenda Direito** ⚖ é uma aplicação que visa facilitar a interação entre clientes e advogados, sobretudo no que diga respeito ao entendimento de situações e termos jurídicos.
 
 ---
 
 ## :interrobang: Motivo
 
-Levando-se em consideração a robustez dos termos e jargões jurídicos, bem como a importância de que estes se façam claros e de fácil entendimento aos leigos, o **Entenda Direito ⚖** surge como uma solução para expandir o conhecimento e facilitar consultas correlatas, ligando linguagem jurídica à linguagem popular.
+Levando-se em consideração a robustez dos termos e jargões jurídicos, bem como a importância de que estes se façam claros e de fácil entendimento aos leigos, o **Entenda Direito** ⚖ surge como uma solução para expandir o conhecimento e facilitar consultas correlatas, ligando linguagem jurídica à linguagem popular.
 
 ---
 
@@ -75,7 +76,7 @@ Para copiar o projeto, utilize os comandos:
   ❯ git clone https://github.com/Tech-Ninjas-DIOX/front-entenda-direito.git
 
   # Entrar no diretório
-  ❯ cd iniciando-back-end
+  ❯ cd front-entenda-direito
 ```
 Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn ou NPM:
 
@@ -86,7 +87,7 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn o
   ❯ yarn
 
   # Iniciar o projeto
-  ❯ yarn dev:server
+  ❯ yarn start
 ```
 
 **Utilizando npm**
@@ -98,39 +99,43 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn o
   ❯ npm install
 
   # Iniciar o projeto
-  ❯ npm dev:server
+  ❯ npm start
 ```
 
 ---
 
 ## :link: Como contribuir
 
-- Faça um `Fork` :fork_and_knife: do repositório,
+- Faça um `Fork` do repositório.
 - Faça um clone do seu respositório gerado do fork:
   - `❯ git clone https://github.com/SEU_USUARIO/front-entenda-direito`
+- Antes de começar a trabalhar, adicione um novo remote; pode chamá-lo de *"upstream"*:
+  - `❯ git remote add upstream https://github.com/Tech-Ninjas-DIOX/front-entenda-direito.git`
+- Obtenha as alterações mais recentes do upstream para o repositório local:
+  - `❯ git pull upstream master`
 - Crie uma branch com sua feature:
-  - `❯ git checkout -b minha_feature`
-- Faça um commit com suas mudanças
-- Envie a sua branch
-  - `❯ git push origin minha_feature`
-- Ir em Pull Requests do projeto original e criar uma pull request com o seu commit
+  - `❯ git checkout -b NOME_DA_BRANCH`
+- Adicione todas as suas mudanças:
+  - `❯ git add -A` ou `❯ git add .`
+- Confirme suas alterações com um commit das mudanças:
+  - `❯ git commit -m "Descrição sobre as mudanças"`
+- Envie a sua branch com as alterações:
+  - `❯ git push origin NOME_DA_BRANCH`
+- Ir em Pull Requests do seu projeto ou projeto original e criar uma pull request.
 
 ---
 
 ## :recycle: Como atualizar seu fork com as mudanças do original
 
-- Adicione um novo remote; pode chamá-lo de "upstream":
-  - `git remote add upstream https://github.com/Tech-Ninjas-DIOX/front-entenda-direito.git`
-- Obtenha todos os branches deste novo remote:
-  - `git fetch upstream`
 - Certifique-se de que você está no branch master:
-  - `git checkout master`
-- Reescreva o seu branch master, de forma que os seus commits que não estão no projeto original apareçam, e que os seus commits fiquem no topo da lista:
-  - `git rebase upstream/master`
-- Talvez você precise forçar um push para o seu próprio repositório do Github. Você pode fazer isso com:
-  - `git push -f origin master`
+  - `❯ git checkout master`
+- Obtenha as alterações mais recentes do upstream para o repositório local:
+  - `❯ git pull upstream master`
+- Leve as alterações do seu repositório local para a *"origem"*:
+  - `❯ git push origin master`
 
-*PS: Você vai precisar fazer o `git push -f` apenas na primeira vez que você faz um rebase.
+*PS: Talvez você precise forçar um push para o seu próprio repositório do Github. Você pode fazer isso com:
+  - `❯ git push -f origin master`
 
 ---
 
@@ -139,7 +144,7 @@ Esse projeto está sob a licença GLP. Veja o arquivo [LICENSE](LICENSE) para ma
 
 ---
 
-## Contribuidores
+## :busts_in_silhouette: Contribuidores
 
 <p align="center">
   <a href="https://github.com/jerp86">
