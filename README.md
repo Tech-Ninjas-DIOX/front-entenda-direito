@@ -140,7 +140,7 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn o
 ---
 
 ## :memo: Licença
-Esse projeto está sob a licença GLP. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Esse projeto está sob a licença GPL. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
