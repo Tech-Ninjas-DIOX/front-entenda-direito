@@ -92,7 +92,7 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn o
 
 **Utilizando npm**
 
-*PS: Caso utilize o NPM, apaque o arquivo `yarn.lock` para ter todas as dependências instaladas da melhor forma.*
+*PS: Caso utilize o NPM, apague o arquivo `yarn.lock` para ter todas as dependências instaladas da melhor forma.*
 
 ```bash
   # Instalar as dependências
