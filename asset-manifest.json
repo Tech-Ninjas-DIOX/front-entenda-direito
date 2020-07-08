@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.js": "/front-entenda-direito/static/js/main.b13e0720.chunk.js",
+    "main.js.map": "/front-entenda-direito/static/js/main.b13e0720.chunk.js.map",
+    "runtime-main.js": "/front-entenda-direito/static/js/runtime-main.0cc37f45.js",
+    "runtime-main.js.map": "/front-entenda-direito/static/js/runtime-main.0cc37f45.js.map",
+    "static/js/2.b9ee9291.chunk.js": "/front-entenda-direito/static/js/2.b9ee9291.chunk.js",
+    "static/js/2.b9ee9291.chunk.js.map": "/front-entenda-direito/static/js/2.b9ee9291.chunk.js.map",
+    "index.html": "/front-entenda-direito/index.html",
+    "precache-manifest.22511a0f792a12a3bea5491b566aaf8a.js": "/front-entenda-direito/precache-manifest.22511a0f792a12a3bea5491b566aaf8a.js",
+    "service-worker.js": "/front-entenda-direito/service-worker.js",
+    "static/js/2.b9ee9291.chunk.js.LICENSE.txt": "/front-entenda-direito/static/js/2.b9ee9291.chunk.js.LICENSE.txt",
+    "static/media/background.jpg": "/front-entenda-direito/static/media/background.a49dcf9c.jpg",
+    "static/media/forgot-password.jpg": "/front-entenda-direito/static/media/forgot-password.6c919960.jpg",
+    "static/media/logo.svg": "/front-entenda-direito/static/media/logo.c65fd4bf.svg",
+    "static/media/sign-up.jpg": "/front-entenda-direito/static/media/sign-up.526a333a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0cc37f45.js",
+    "static/js/2.b9ee9291.chunk.js",
+    "static/js/main.b13e0720.chunk.js"
+  ]
+}
